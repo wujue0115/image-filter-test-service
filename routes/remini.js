@@ -86,7 +86,7 @@ router.post("/filter", upload.single("image"), async (req, res) => {
 });
 
 router.get("/hello", (req, res) => {
-  res.send("Hello World");
+  res.send({ message: "Hello World" });
 });
 
 export default router;
